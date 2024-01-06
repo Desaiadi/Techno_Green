@@ -1,0 +1,5 @@
+1'' pipe = diameter =  2.54 ; r = 1.27;
+
+1960/2 = 980*30 = 29400
+our system
+40*6=240 per day 240*30 = 7200 liter ;

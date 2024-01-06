@@ -1,0 +1,125 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020     @TRIS_C
+021-02E time
+02F-03E calendar
+03F     i
+040     second
+041     minute
+042     hour
+043     date
+044     month
+045     year
+046     @I2C_READU_1.P1
+046     lcd_init.i
+046     edit.parameter
+046     @I2C_WRITEU_1.P1
+046     DS3231_display.@SCRATCH1
+046     @PSTRINGR_645.@SCRATCH1
+046     MAIN.@SCRATCH1
+047     edit.xx
+047-04A lcd_init.LCD_INIT_STRING
+047     DS3231_display.@SCRATCH2
+047     @PSTRINGR_645.@SCRATCH2
+048     edit.yy
+048     @MUL88.P1
+049     blink.j
+049     @MUL88.P1
+049     @PRINTF_U_645.P2
+049     @PSTRINGC7_645.@SCRATCH1
+04A     @PRINTF_U_645.P1
+04A     @PSTRINGC7_645.@SCRATCH2
+04B     @DIV88.P1
+04B     lcd_init.@SCRATCH1
+04B     @PSTRINGC7_645.@SCRATCH3
+04C     lcd_putc.c
+04C     @DIV88.P1
+04C     @PSTRINGC7_645.@SCRATCH4
+04D     @delay_ms1.P1
+04D     lcd_gotoxy.x
+04D     @DIV88.@SCRATCH1
+04E     lcd_gotoxy.y
+04F     lcd_gotoxy.address
+050     lcd_gotoxy.@SCRATCH1
+051     lcd_send_byte.address
+052     lcd_send_byte.n
+053     lcd_read_byte.low
+053     lcd_send_byte.@SCRATCH1
+054     lcd_send_nibble.n
+054     lcd_read_byte.high
+055     lcd_read_nibble.n
+055     lcd_read_byte.@SCRATCH1
+056     lcd_read_nibble.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const689.call
+000006  @delay_ms1
+00001A  lcd_send_nibble
+000034  lcd_read_nibble
+000059  lcd_send_byte
+00005F  lcd_read_byte
+00009C  lcd_init
+0000DB  lcd_gotoxy
+0000ED  lcd_putc
+000119  @DIV88
+00012E  @PRINTF_U_645
+000163  blink
+000178  edit
+0001C4  @PSTRINGC7_645
+00022F  @I2C_WRITEU_1
+00023F  @I2C_READU_1
+00024F  @MUL88
+000274  @PSTRINGR_645
+00028A  DS3231_display
+000352  MAIN
+000352  @cinit1
+00036E  @cinit2
+
+Project Directory:
+    D:\Downloads\TULIP_FARM\CODE\NEW_CODE\
+
+Project Files:
+    main.c                                                  [07-Aug-22 17:33  CRC=0C746442]
+    C:\Program Files (x86)\PICC\Devices\16F877A.h           [12-Nov-13 14:35  CRC=81334808]
+    C:\Program Files (x86)\PICC\Drivers\lcd.c               [19-Sep-13 15:38  CRC=D1A6378A]
+
+Source signature=30F41B5E
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

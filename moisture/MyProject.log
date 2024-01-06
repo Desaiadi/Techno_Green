@@ -1,0 +1,18 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP16F887 -DL -O11111114 -fo10 -N"D:\Downloads\TULIP FARMS\moisture\MyProject.mcppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" -SP"D:\Downloads\TULIP FARMS\moisture\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" "MyProject.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl"	 
+hint: 0	1139	Available RAM: 352 [bytes], Available ROM: 8192 [bytes]	 
+diagnostics: 0	122	Compilation Started	P16F887.c
+diagnostics: 967	123	Compiled Successfully	P16F887.c
+diagnostics: 0	122	Compilation Started	__Lib_Delays.c
+diagnostics: 123	123	Compiled Successfully	__Lib_Delays.c
+diagnostics: 0	122	Compilation Started	MyProject.c
+error: 23	324	Undeclared identifier 'ADC_Init' in expression	MyProject.c
+error: 24	324	Undeclared identifier 'Lcd_Init' in expression	MyProject.c
+error: 25	324	Undeclared identifier 'Lcd_Cmd' in expression	MyProject.c
+error: 26	324	Undeclared identifier 'Lcd_Cmd' in expression	MyProject.c
+error: 27	324	Undeclared identifier 'Lcd_Out' in expression	MyProject.c
+error: 32	324	Undeclared identifier 'ADC_Read' in expression	MyProject.c
+error: 34	324	Undeclared identifier 'FloatToStr' in expression	MyProject.c
+error: 34	402	; expected, but ')' found	MyProject.c
+error: 34	424	'}' expected ';' found	MyProject.c
+error: 38	424	'}' expected '}' found	MyProject.c
+error: 0	102	Finished (with errors): 01 Oct 2022, 20:09:51	MyProject.mcppi
